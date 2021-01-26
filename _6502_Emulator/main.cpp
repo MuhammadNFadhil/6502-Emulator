@@ -22,10 +22,19 @@ struct CPU {
 	Byte V : 1;
 	Byte N : 1;
 
+	void Reset()
+	{
+		// Faking the boot up sequence:
+		PC = 0xFFFC;		// 
+		SP = 0x0100;		// Setting the stack pointer
+		C = Z = I = D = B = V = N = 0; // Clearing the flags
+		A = X = Y = 0;		// 
+	}
 };
 
 int main()
 {
 	CPU cpu;
+	cpu.Reset();
 	return 0;
 }
