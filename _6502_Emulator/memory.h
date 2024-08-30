@@ -1,6 +1,8 @@
 // Normally, the method implementations would be in a .cpp file, but since the memory
 // is not really a part of the emulator, I have it contained in a single header file.
 
+#pragma once
+
 #include "common.h"
 
 struct Memory
