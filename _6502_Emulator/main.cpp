@@ -6,6 +6,6 @@ int main()
 {
 	Memory mem;
 	CPU cpu;
-	cpu.Reset(mem);
+	cpu.reset(mem);
 	return 0;
 }
