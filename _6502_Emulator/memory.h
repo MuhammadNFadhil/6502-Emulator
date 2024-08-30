@@ -10,11 +10,9 @@ struct Memory
 	static constexpr u32 MAX_MEM = 1024 * 64;
 	Byte Data[MAX_MEM];
 
-	void Initialize()
+	void initialize()
 	{
 		for (u32 i = 0; i < MAX_MEM; i++)
-		{
 			Data[i] = 0;
-		}
 	}
 };
