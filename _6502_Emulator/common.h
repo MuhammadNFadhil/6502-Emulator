@@ -1,8 +1,10 @@
 #pragma once
 
+#include <cstdint>
+
 // Data size aliases:
-using Byte = unsigned char;
-using Word = unsigned short;
+using Byte = uint8_t;
+using Word = uint16_t;
 
 // Type aliases:
-using u32 = unsigned int;
+using u32 = uint32_t;
