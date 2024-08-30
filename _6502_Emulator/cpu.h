@@ -5,7 +5,7 @@
 struct CPU
 {
 	Word PC; // Program Counter
-	Byte SP; // Stack Pointer
+	Word SP; // Stack Pointer
 
 	// Registers
 	Byte A, // Accumulator
