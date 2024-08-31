@@ -20,4 +20,9 @@ struct Memory
 	{
 		return data[address];
 	}
+
+	Byte& operator[](u32 address)
+	{
+		return data[address];
+	}
 };
